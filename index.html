@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Chillax</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid" style="background-color: black;">
+            <div class="row">
+                <div class="col-sm-5">
+                   <div id="chillax">CHILLAX</div> 
+                </div>
+                <div class="col-sm-1" style="padding-top: 60px;">
+                    <div class="nav nav-pill">
+                        <button onclick="move()" id="cat">MOVIES</button>
+                    </div>
+                </div>
+                <br/>
+                <div class="col-sm-1" style="padding-top: 60px;">
+                    <div class="nav nav-pill" style="padding-left: 12px;" >
+                        <button onclick="kids()" id="cat"> &nbsp;KIDS</button> 
+                    </div>
+                </div>
+
+                <div class="col-sm-2" style="padding-top: 60px;">
+                    <div class="nav nav-pill"> 
+                        <button onclick="trending()" id="cat" ><a>TRENDING</button>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="nav nav-fill" style="padding-top: 65px;"> 
+                        <form id="form">
+                            <input type="text" size="28px" placeholder="Search" id="search">
+                        </form>
+                       <button style="padding: 3px;color:white;background-color: black;" onclick="find()"> SEARCH </button>
+                    </div>
+                </div>
+            </div>
+            <br/>
+        </div>
+        
+    </header>
+    <main class="d-flex flex-wrap" id="main">
+    </main>
+    <script src="deeds.js"></script>
+</body>
+</html>
